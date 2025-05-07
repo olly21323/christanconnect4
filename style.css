@@ -1,0 +1,37 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Jesus_Christ_Celebrated_by_the_Children.jpg/800px-Jesus_Christ_Celebrated_by_the_Children.jpg') no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  margin-top: 20px;
+  color: white;
+}
+#board {
+  display: grid;
+  grid-template-columns: repeat(7, 60px);
+  grid-template-rows: repeat(6, 60px);
+  gap: 5px;
+  justify-content: center;
+  margin: 30px auto;
+}
+.cell {
+  width: 60px;
+  height: 60px;
+  background-color: #f4f4f4;
+  border-radius: 50%;
+  border: 2px solid #aaa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.gold { background-color: gold; }
+.blue { background-color: skyblue; }
+#status {
+  color: white;
+  font-size: 20px;
+}
